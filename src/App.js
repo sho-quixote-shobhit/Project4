@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Box } from "@chakra-ui/react"
+import Navbar from './webComponets/Navbar/Navbar';
+import Header from './webComponets/LandingPage/Header';
+import BookShoot from './webComponets/LandingPage/BookShoot';
+import HowItWorks from './webComponets/LandingPage/HowItWorks';
+import Contact from './webComponets/LandingPage/Contact';
+import Footer from './webComponets/Footer/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Box>
+            <Navbar />
+            <Header />
+            <BookShoot />
+            <HowItWorks />
+            <Contact />
+            <Footer />
+        </Box>
+    );
 }
 
 export default App;
